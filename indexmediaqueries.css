@@ -85,6 +85,20 @@
         justify-content: center;
     } */
 
+    /* main section  */
+   .main{
+    padding-top:6rem;
+   } 
+
+
+     /* most read section  */
+
+     .grid{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+     }
+
     /* common prop  */
 
     .borderright::after{

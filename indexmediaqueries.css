@@ -1,0 +1,369 @@
+/* header media queries  */
+
+@media screen and (max-width:800px){
+
+ .header nav:first-of-type{
+    display: none;
+
+ }
+    
+    /* .laptopnav{
+        display: none;
+    } */
+
+    .fa-xmark{
+        color:white;
+    }
+
+    .mobilenavMenu{
+        position: fixed;
+        top:0;
+       right: -100%;
+        background-color: black;
+        width: 70%;
+        height:100%;
+        
+        padding:5rem 2rem;
+       transition: right .5s;
+    }
+
+    .mobilenavList{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .navClose{
+        position: absolute;
+        top:1rem;
+        right:1.5rem;
+    }
+
+    .mobilenavMenu.showMenu{
+        right: 0;
+    }
+
+
+}
+
+
+@media screen and (min-width:801px){
+    .mobilenav{
+        display: none;
+    }
+
+    .navClose{
+        display: none;
+    }
+
+    .navToggle{
+        display: none;
+    }
+}
+
+/* main media queries  */
+
+@media screen and (max-width:399px){
+
+    /* .mostreadheading::after{
+       display: none;
+        
+  }
+
+    .mostreadingdata{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:0rem;
+    }
+
+    .mostreadlist{
+        grid-template-columns: max-content;
+        grid-template-rows:repeat(6,2rem);
+        justify-content: center;
+    } */
+
+    /* common prop  */
+
+    .borderright::after{
+        display: none;
+        
+  }
+
+    /* find me section  */
+
+    .findingdata{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .mediaqueries{
+        flex-direction: column;
+        width: 100%;
+        row-gap: 1rem;
+    }
+
+    .findwidth{
+        width: 100%;
+    }
+
+    /* news section  */
+
+    .newsgrid{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+    
+    .newsheading a:first-of-type::after{
+        display: none;
+
+    }
+
+  /* around the bbc content  */
+
+  .aroundthebbccontent{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* footer  */
+    .footercontent{
+        grid-template-columns: max-content;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:800px){
+
+   .borderright{
+        text-align: center;
+    }
+
+    .borderright::after{
+        display: none;
+         
+   }
+
+    .mostreadingdata{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0rem;
+      }
+
+      .mostreadlist{
+        grid-template-columns: max-content;
+        grid-template-rows:repeat(6,2rem);
+        justify-content: center;
+    }
+      
+    /* find me section  */
+
+    .findingdata{
+        flex-direction: column;
+
+    }
+
+    .mediaqueries{
+        /* width: 40%; */
+        width: 100%;
+        display: flex;
+        /* gap:3rem; */
+     
+        
+    }
+
+    .findwidth{
+        width: 50%;
+       
+    }
+    /* .findwidth{
+        display: grid;
+        grid-template-columns: repeat(2,max-content);
+    } */
+
+
+    /* newsgrid section  */
+
+    .newsheading{
+        gap:3rem;
+    }
+    .newslink::after{
+        display: none;
+    }
+
+    .newsgrid{
+        grid-template-columns: repeat(2,180px);
+        justify-content: center;
+        row-gap: 1.5rem;
+        column-gap: 2rem;
+    }
+
+    /* around the bbc section  */
+
+    .aroundthebbccontent{
+        margin-top:1.5rem;
+        display: grid;
+        grid-template-columns:repeat(2,185px);
+        grid-template-rows: 300px repeat(3,230px);
+        justify-content: center;
+        column-gap: 1rem;
+        row-gap: 3rem;
+    }
+
+     .aroundthebbcfirstcontent{
+        grid-column: 1/3;
+        grid-row:1/2;
+    } 
+
+
+    /* .aroundthebbcfirstcontent{
+        grid-column: 1/4;
+    } */
+
+   /* .aroundthebbcsecondcontent{
+        grid-row: 2/3;
+    }  */
+
+    /* .aroundthebbcsevencontent{
+        grid-row: 3/4;
+       
+    } */
+
+    /* footer section  */
+
+    .footer{
+        padding:1rem 0rem;
+    }
+        .footerheading{
+            text-align: center;
+        }
+        .footercontent{
+            grid-template-columns: repeat(3,max-content);
+            /* column-gap: 3rem; */
+            gap:5rem;
+            row-gap: 1.5rem;
+            justify-content: center;
+        
+        }
+
+        .footercommonprop::after{
+           display: none;
+        }
+        
+}
+
+@media screen and (min-width:801px) and (max-width:1200px){
+
+    .mostreadingdata{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0rem; */
+        /* grid-template-columns: repeat(2,max-content);
+        gap:0rem; */
+        grid-template-columns: max-content;
+        justify-content: center;
+        gap:2rem;
+      }
+
+    .mostreadlist{
+        grid-template-columns: max-content;
+        grid-template-rows:repeat(6,2rem);
+        justify-content: center;
+    }
+    
+
+      /* find me section  */
+
+      .findingdata{
+        flex-direction: column;
+
+    }
+
+    .mediaqueries{
+        /* width: 40%; */
+        width: 100%;
+        display: flex;
+        /* gap:3rem; */
+     
+        
+    }
+
+    .findwidth{
+        width: 50%;
+       
+    }
+    /* .findwidth{
+        display: grid;
+        grid-template-columns: repeat(2,max-content);
+    } */
+
+
+    .footer .footercontainer{
+        width: 80%;
+        margin:0 auto;
+        padding: 0;
+    }
+
+    /* news section  */
+
+    .newsgrid{
+        grid-template-columns: repeat(3,250px);
+        justify-content: center;
+        row-gap: 1.5rem;
+        column-gap: 2rem;
+    }
+
+
+    /* around the bbc section  */
+    
+    .aroundthebbccontent{
+        margin-top:1.5rem;
+        display: grid;
+        grid-template-columns:repeat(3,220px);
+        grid-template-rows: 430px repeat(2,230px);
+        justify-content: center;
+        column-gap: 1rem;
+        row-gap: 3rem;
+    }
+
+    .aroundthebbcfirstcontent{
+        grid-column: 1/4;
+    }
+
+   /* .aroundthebbcsecondcontent{
+        grid-row: 2/3;
+    }  */
+
+    .aroundthebbcsevencontent{
+        grid-row: 3/4;
+       
+    }
+
+
+    /* footer section  */
+.footer{
+    padding:1rem 0rem;
+}
+    .footerheading{
+        text-align: center;
+    }
+    .footercontent{
+        grid-template-columns: repeat(3,max-content);
+        /* column-gap: 3rem; */
+        row-gap: 1.5rem;
+        justify-content: center;
+    }
+
+    /* lower footer part  */
+    .lowerfooterpart nav{
+        text-align: center;
+    }
+}

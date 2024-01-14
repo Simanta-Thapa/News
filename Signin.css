@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+:root{
+    --core-color:#3092ff;
+}
+
+body{
+    background: black;
+}
+
+.cross{
+    position: fixed;
+    top:1rem;
+    right: 2rem;
+}
+
+#close{
+    background: white;
+    display: inline-block;
+    padding:0.5rem 0.8rem;
+}
+.fa-xmark{
+    color:black;
+    font-size:2rem;
+   
+}
+
+
+/* signin content  */
+
+.Signincontent{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap:1rem;
+  
+}
+
+#signinheading{
+    font-size:2rem;
+    width: 30%;
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.signinfield{
+    position: relative;
+    margin-top:2rem;
+}
+
+.signinfield form{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.forminputfield span{
+    position: absolute;
+    left:0.1rem;
+    bottom:10.5rem;
+    color:#848484;
+    font-size:1.5rem;
+    transition:top .4s;
+}
+
+
+#inputspan.active{
+    top:-1.3rem;
+    left:0.1rem;
+    font-size:1rem;
+   
+   
+}
+#email{
+    outline: none;
+    border:none;
+    border-bottom: 2px solid white;
+    background: black;
+    color:white;
+    width: 400px;
+    font-size: 2rem;
+}
+
+
+button{
+    background-color: #0071f1;
+    height: 3rem;
+    outline: none;
+   border:none;
+   color:#fff;
+   font-weight: bolder;
+   margin-bottom: 1.5rem;
+}
+
+
+.commonlink{
+    color:var(--core-color);
+    font-weight: bolder;
+    font-size:1.2rem;
+   
+}
+
+.accountsection{
+    text-align:center ;
+}
+
+.accountsection h3{
+    color:white;
+    font-weight: bold;
+}
+
+.signinfield{
+    border-bottom: 2px solid grey;
+    padding-bottom: 2rem;
+}

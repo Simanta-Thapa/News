@@ -6,14 +6,20 @@
     text-decoration: none;
 }
 
+
 .laptopnav{
     justify-content: space-between;
   
-    background-color: #b80000;
+    background-color: black;
 }
 
-.laptopnav .container{
-    padding-top:1rem;
+.laptopcontainer{
+    padding:1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin:0 auto;
 }
 .laptopnavLogo{
     text-decoration: none;
@@ -33,7 +39,7 @@
 
 .laptopnavList{
     gap:2rem;
-    padding: 0;
+    padding-top:1rem;
    
 
 }
@@ -46,8 +52,35 @@
     text-decoration: none;
     color:white;
     display: inline-block;
-    padding:1rem 0rem;
+    /* padding:1rem 0rem; */
     
+}
+
+
+.laptopsearch{
+    background:#202224;
+    padding: 1rem 0rem;
+    padding-left: 1rem;
+    padding-right: 4rem;
+}
+/* .laptopsearch span{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+   
+} */
+
+/* .laptopsearch span i{
+    color:white;
+} */
+.laptopsearch span a{
+    color:white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+ 
 }
 
 .header{

@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* common class  */
+
+.section{
+    padding:1.5rem 0rem;
+}
+
+.container{
+    width: 90%;
+    margin:0 auto;
+}
+
+.commongrid{
+    grid-template-columns: 450px repeat(3,200px);
+    grid-template-rows: repeat(2,250px);
+    gap:1rem;
+}
+
+.lastcommonlink a:first-of-type:hover{
+    display: block;
+    color:#387b12;
+    text-decoration: underline;
+   
+}
+
+.lastcommonlink a:nth-of-type(2){
+    color:#387b12;
+    text-decoration: none;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+/* need to know section  */
+
+
+#needtoknowheading p{
+    font-size:1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+  
+}
+#firstcontent{
+    grid-column: 1/2;
+  
+}
+.needtoknowimage img{
+    width: 100%;
+}
+
+#fivecontent{
+    grid-column: 2/3;
+    
+}
+
+.needtoknowcommontextprop a:first-of-type{
+    font-size:1.2rem;
+    font-weight: bold;
+    display: block;
+    color:black;
+
+}
+
+.needtoknowcommontextprop a:first-of-type:hover{
+ 
+    color:#387b12;
+    text-decoration: underline;
+
+}
+
+.needtoknowcommontextprop a:nth-of-type(2){
+    margin-top:1.5rem;
+    color:#f0caca;
+    display: block;
+
+}
+
+/* last section  */
+
+.lastcontainer{
+    width: 90%;
+    margin:0 auto;
+}
+.lastgrid{
+
+    grid-template-columns: repeat(3,370px);
+    gap:1rem;
+   
+}
+
+.lastimg img{
+    width: 100%;
+}
+
+.lastcommonlink a:first-of-type{
+    display: block;
+    color:black;
+    text-decoration: none;
+    font-size:1.3rem;
+}
+
+
+
+.lastcommonlink a{
+    margin:1rem 0rem;
+color:grey;
+text-decoration: none;
+}
+
+/* find us here section  */
+
+.findushereheading p{
+    font-size:1.5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+/* .findusherecommonprop{
+
+    align-items: center;
+} */
+.findusherecommonimg{
+    width: 25%;
+    
+}
+
+.findusherecommonimg img{
+    width: 100%;
+    padding:1rem 1rem;  
+    background: transparent;
+}
+
+#findfirstimg{
+    background: #2aa3ef;
+}
+
+#findsecondimg{
+    background: #4469b0;
+}
+
+#findthirdimg{
+    background: #fc0b1b;
+}
+
+
+.logotitle a{
+    color: black;
+    font-weight: bolder;
+    font-size:1.5rem;
+}
+
+.logotitle a:hover{
+    color:#387b12;
+    text-decoration: underline;
+}
+
+#findfooterlink a{
+    color: black;
+    font-weight: bolder;
+    font-size:1rem;
+    text-decoration: underline;
+}
+
+#findfooterlink a:hover{
+    color:#387b12;
+}
+
+
+/* footer section  */
+
+.footer{
+    background: #4c4c4c;
+  }
+  
+  .footer .footercontainer{
+     width: 100%;
+      padding:1rem 1rem;
+  }
+  
+  .footercontent{
+      display:grid;
+      grid-template-columns:repeat(6,max-content);
+      /* justify-content: space-between; */
+      gap:10rem;
+      margin-top:2rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid grey;
+  }
+  
+  .footerheading h3{
+      color:#fff;
+  }
+  
+  .footercommonprop{
+      position:relative;
+  }
+  
+  /* .footercommonprop::after{
+      position:absolute;
+      content:'';
+      background:grey;
+      width: 3px;
+      top:19px;
+      right:-9rem;
+      height:3rem;
+  } */
+  
+  .footerlink{
+      display: block;
+      color:white;
+      text-decoration: none;
+      padding-top:0.7rem;
+  }
+  
+  .footerlink:hover{
+      text-decoration: underline;
+  }
+  
+  
+  /* footer lower part  */
+  
+  .lowerfooterpart{
+     
+      /* width: 80%; */
+      margin: 1rem 0rem;
+  }
+  
+  
+  .footerlowerlink{
+      display: inline-block;
+      color:white;
+      text-decoration: none;
+      margin-right: 0.8rem;
+      font-size: 0.9rem;
+  }
+  
+  .footerlowerlink:hover{
+      text-decoration: underline;
+  }
+  
+  .lowerfooterpart p{
+      margin-top:1rem;
+      color:#fff;
+      font-size:13px;
+  }
+
+
+@media screen and (max-width:639px){
+    /* need to know section  */
+
+    #needtoknowheading p{
+        font-size:1.5rem;
+        margin-bottom: 1rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+        .commongrid{
+            display: flex;
+            flex-direction: column;
+            /* gap:2rem; */
+            row-gap: 2rem;
+    
+        }
+
+     /* last section  */
+    .lastcontent {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* find us here section  */
+
+    .findusherecontent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #findfooterlink{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    /* footer  */
+    .footercontent{
+        grid-template-columns: repeat(2,max-content);
+        row-gap: 1rem;
+        column-gap: 2rem;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:640px) and (max-width:767px){
+
+    /* need to know  */ 
+    .commongrid{
+        grid-template-columns: repeat(3,210px);
+        grid-template-rows: 500px repeat(2,200px);
+        justify-content: center;
+        align-items: center;
+    }
+    #firstcontent{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+     #secondcontent{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    
+    #thirdcontent{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    #needtoknowheading p{
+        font-size:1.5rem;
+        margin-bottom: 1rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    /* last section  */
+    .lastcontent{
+        display: grid;
+        grid-template-columns: repeat(2,270px);
+    }
+
+     /* find us here section  */
+
+     .findusherecontent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #findfooterlink{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+      /* footer  */
+      .footercontent{
+        grid-template-columns: repeat(3,max-content);
+        row-gap: 1rem;
+        column-gap: 10rem;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    
+       /* need to know  */ 
+       .commongrid{
+        grid-template-columns: repeat(3,210px);
+        grid-template-rows: 500px repeat(2,200px);
+        justify-content: center;
+        align-items: center;
+    }
+    #firstcontent{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+     #secondcontent{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    
+    #thirdcontent{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+
+     /* last section  */
+     .lastcontent{
+        display: grid;
+        grid-template-columns: repeat(2,270px);
+    }
+
+        /* footer  */
+        .footercontent{
+            grid-template-columns: repeat(6,max-content);
+            row-gap: 1rem;
+            column-gap: 5rem;
+        
+        }
+
+}

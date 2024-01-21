@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.laptopnavbar{
+    background-color: white;
+}
+.container{
+    width: 95%;
+    margin:0 auto;
+}
+
+.laptopnavbaruppercontent{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.laptopnavbarleft{
+    display: flex;
+}
+
+.laptopnavbarright{
+    display:flex;
+}
+
+.laptopnavbarmiddle a{
+    color:black;
+    
+}
+
+.laptopnavbarupperbottomcontent{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.laptopnavbarupperbottomcontent.showtopbottomnavbar{
+    height: 10rem;
+    overflow: visible;
+
+}
+
+.fa-xmark{
+    font-size:2rem;
+    padding:0.5rem 1rem;
+}
+
+.fa-xmark:hover{
+    background-color: #0051ad;
+}
+
+
+/* middle navbar  */
+
+.laptopmiddlenavbar{
+
+    background: #b80000;
+}
+
+.laptopnavbarmiddlecontent{
+    width: 95%;
+    margin:0 auto;
+}
+
+.laptopnavbarmiddlelist ol{
+    display: flex;
+}
+
+.laptopnavbarmiddlelist{
+    display: flex;
+    justify-content: space-between;
+}
+
+.laptopnavbarmiddlecontent h3{
+    color:white;
+    font-size:1.5rem;
+    
+}
+
+/* lower navbar  */
+.lowermostnavbar{
+    background: white;
+}
+
+
+
+.lowermostnavbar{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.laptopmiddlenavbar.height{
+    height: 150px;
+}
+
+.lowermostnavbar.showlowermostnavbar{
+    max-height: 200px;
+    overflow: visible;
+}

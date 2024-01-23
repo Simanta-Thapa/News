@@ -534,7 +534,7 @@ text-decoration: none;
         text-align: center;
     }
 
-        .commongrid{
+        .commongrid.grid{
             display: flex;
             flex-direction: column;
             /* gap:2rem; */
